@@ -9,7 +9,11 @@ cask "winmode" do
 
   depends_on macos: ">= :ventura"
 
-  app "WinMode.app", no_quarantine: true
+  app "WinMode.app"
+
+  postflight do
+    system_command "/usr/bin/xattr", args: ["-d", "com.apple.quarantine", "#{appdir}/WinMode.app"], sudo: false
+  end
 
   zap trash: [
     "~/Library/Preferences/ai.makersoft.winmode.plist",
