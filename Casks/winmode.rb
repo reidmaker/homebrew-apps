@@ -9,7 +9,7 @@ cask "winmode" do
 
   depends_on macos: ">= :ventura"
 
-  app "WinMode.app"
+  app "WinMode.app", no_quarantine: true
 
   zap trash: [
     "~/Library/Preferences/ai.makersoft.winmode.plist",
