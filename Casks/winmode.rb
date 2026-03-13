@@ -1,6 +1,6 @@
 cask "winmode" do
-  version "1.0.0"
-  sha256 "5395bc29f10815e2afac239f40bf3c03cf9a5c09cafff46c674556bfd27112fe"
+  version "1.1.5"
+  sha256 "b34e419a05bf117219ebeba5bb1bf68554c94c96b484fa8a50ccc2dbaf27fd9a"
 
   url "https://github.com/reidmaker/MakerZones/releases/download/v#{version}/WinMode-#{version}.zip"
   name "WinMode"
@@ -15,4 +15,15 @@ cask "winmode" do
     "~/Library/Preferences/ai.makersoft.winmode.plist",
     "~/Library/Logs/WinMode",
   ]
+
+  caveats <<~EOS
+    WinMode requires Accessibility permissions to remap keys and manage windows.
+    After installation, grant access in:
+      System Settings > Privacy & Security > Accessibility
+
+    WinMode runs in the menu bar. Click the icon to open Settings.
+
+    Upgrade to Pro for Alt+Tab switching, scroll reversal, per-app
+    exclusions, and more: https://makersoft.ai
+  EOS
 end
