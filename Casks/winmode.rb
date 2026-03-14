@@ -2,7 +2,7 @@ cask "winmode" do
   version "1.1.9"
   sha256 "645a471489698392dfd9ad04a0ee5d0c5653c7190ed7cd5b5b600c10fa946105"
 
-  url "https://github.com/reidmaker/homebrew-apps/releases/download/v#{version}/WinMode-#{version}.zip"
+  url "https://github.com/makersoft-ai/homebrew-apps/releases/download/v#{version}/WinMode-#{version}.zip"
   name "WinMode"
   desc "Windows-style window management, keyboard shortcuts, and Alt+Tab for macOS"
   homepage "https://makersoft.ai/winmode-make-your-mac-work-like-windows"
