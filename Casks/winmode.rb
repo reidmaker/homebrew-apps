@@ -1,6 +1,6 @@
 cask "winmode" do
-  version "1.1.9"
-  sha256 "645a471489698392dfd9ad04a0ee5d0c5653c7190ed7cd5b5b600c10fa946105"
+  version "1.3.0"
+  sha256 "36b394a5b2e0eca1d5d9b679e9d2b6721e6948acd812aad4685a24afd458611e"
 
   url "https://github.com/makersoft-ai/homebrew-apps/releases/download/v#{version}/WinMode-#{version}.zip"
   name "WinMode"
@@ -26,8 +26,5 @@ cask "winmode" do
       System Settings > Privacy & Security > Accessibility
 
     WinMode runs in the menu bar. Click the icon to open Settings.
-
-    Upgrade to Pro for Alt+Tab switching, scroll reversal, per-app
-    exclusions, and more: https://makersoft.ai
   EOS
 end
